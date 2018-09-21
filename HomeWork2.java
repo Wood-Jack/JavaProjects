@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class HomeWork2
 {
-	public static void main(String arg[])
+	public static void main(String args [])
 	
 	{
 		Scanner myScanner= new Scanner(System.in); 
