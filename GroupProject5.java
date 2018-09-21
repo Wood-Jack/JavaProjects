@@ -38,7 +38,7 @@ import java.util.Random;
 		}
 		while(dice1 != dice2 || dice2 != dice3 || dice3 != dice4 || dice4 != dice5);
 		System.out.println(" Yahtzee!!");
-		System.out.println(" Yahtzee in " + counter + " rolls");
+		System.out.println(" Yahtzee in " + counter + " olls");
 	
 		
 	}
