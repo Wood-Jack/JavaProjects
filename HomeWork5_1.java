@@ -23,7 +23,8 @@ public class HomeWork5_1
 			System.out.println(" Prize winner 3 is " + finalist3);
 		}
 		// the finalist can't equal the same number
-		while (finalist1 != finalist2 && finalist2 != finalist3 && finalist3 != finalist1);
+		while (finalist1 == finalist2 && finalist2 == finalist3 && finalist3 == finalist1);
+		
 		System.out.println("Winners!");
 		
 	}
