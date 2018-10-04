@@ -2,14 +2,14 @@
 public class Product
 {
 	// Instance Variables
-	public String Name;
+	public String name;
 	public double price;
 	public int inventoryQuantity;
 	
 	// methods
 	public String toString()
 	{
-		return " Product Name " + Name + "Cost" + price + " Quantity"+ inventoryQuantity;
+		return name;
 }
 
 
