@@ -26,7 +26,7 @@ public class SuperStore3
 		inventoryValue += product3.calcInventoryValue();
 		
 		SalesTransaction sale1 = new SalesTransaction(product1,2)
-		
+	
 		
 		
 		System.out.println(product1 +" inventory value of product " +product1.calcInventoryValue());
