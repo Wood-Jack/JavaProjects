@@ -25,17 +25,24 @@ public class SuperStore3
 		inventoryValue += product2.calcInventoryValue();
 		inventoryValue += product3.calcInventoryValue();
 		
-		SalesTransaction sale1 = new SalesTransaction(product1,2)
 	
 		
 		
-		System.out.println(product1 +" inventory value of product " +product1.calcInventoryValue());
+		System.out.println(product1 +" Inventory value of product $" +product1.calcInventoryValue());
 		
-		System.out.println(product2 +" inventory value of product "+ product2.calcInventoryValue());
+		System.out.println(product2 +" Inventory value of product $"+ product2.calcInventoryValue());
 		
-		System.out.println(product3+ " inventory value of product " + product3.calcInventoryValue());
+		System.out.println(product3+ " Inventory value of product $" + product3.calcInventoryValue());
 		
-		System.out.println(" Inventory value for all of the products is "+inventoryValue);
+		System.out.println(" Inventory value for all of the products is $"+inventoryValue);
+		
+			SalesTransaction1 sale1 = new SalesTransaction1(product1,55);
+			SalesTransaction1 sale2 = new SalesTransaction1 (product2,45);
+			SalesTransaction1 sale3 = new SalesTransaction1 (product3, 5);
+		System.out.println(sale1.toString());
+		System.out.println(sale2.toString());
+		System.out.println(sale3.toString());
+	
 		
 	}
 }

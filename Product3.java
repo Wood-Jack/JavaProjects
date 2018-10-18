@@ -8,17 +8,6 @@ public class Product3
 	
 	// Constructor Method
 	
-	public Product3(String name)
-	{
-		System.out.println("DEBUG: Picked Constructor 1");
-		this.name= name;
-	}
-	 public Product3(String name, double price)
-	{
-		System.out.println("DEBUG: Picked Constructor 2" );
-		this.name= name;
-		this.price= price;
-	}
 	 public Product3(String name, double price, int Quantity)
 	{
 		System.out.println("DEBUG: Picked Constructor 3" );
@@ -58,7 +47,7 @@ public class Product3
 
 	public String toString()
 	{
-		return name+" "+price+"  "+Quantity;
+		return name ;
 	}
 	/*
 	 * double inventoryValue;
