@@ -14,10 +14,10 @@ public class FractionTester
 		Fraction input2= new Fraction(9999,9999,1000);
 		
 		System.out.println("please enter the Numerator ");
-		input1.setNumerator(double) = fraction.nextDouble();
+		input1.setNumerator(1);
 		
 		System.out.println(" Please enter the Denominator ");
-		input1.denominator = fraction.nextDouble();
+		input1.setDenominator(denominator) = fraction.nextDouble();
 		
 	}
 }

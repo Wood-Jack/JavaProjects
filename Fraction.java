@@ -27,6 +27,14 @@ public class Fraction
 		this.numerator= numerator;
 	}
 	public double getDenominator()
+	{
+		return denominator;
+	}
+	public void setDenominator (double denominator)
+	{
+		this.denominator= denominator;
+	}
+	
 }
 
 	
