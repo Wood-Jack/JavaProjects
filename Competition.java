@@ -5,6 +5,17 @@ public class Competition
 	private String nameCompetition,winningTeam,runnerUp;
 	private int yearCompetition;
 	
+	//Copy Constructor
+	public Competition( Competition inputCompetition)
+	{
+		nameCompetition=inputCompetition.nameCompetition;
+		winningTeam=inputCompetition.winningTeam;
+		runnerUp= inputCompetition.runnerUp;
+		yearCompetition= inputCompetition.yearCompetition;
+	}
+	
+	
+	
 	//Constructor Method
 	public Competition ( String nameCompetition,String winningTeam,String runnerUp, int yearCompetition)
 	{

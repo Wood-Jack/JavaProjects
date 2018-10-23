@@ -6,6 +6,18 @@ public class Team
 	private String name1,name2,name3,name4;
 	private Competition competition1,competition2;
 	
+	//Copy Constructor
+	public Team ( Team inputTeam)
+	{ 
+		teamName=inputTeam.getTeamName();
+		name1=inputTeam.getName1();
+		name2=inputTeam.getName2();
+		name3=inputTeam.getName3();
+		name4=inputTeam.getName4();
+		competition1= inputTeam.getCompetition1();
+		competition2= inputTeam.getCompetition2();
+	}
+	
 	// Constructor method 
 	
 	public Team ( String teamName,String name1,String name2,String name3,String name4,
@@ -80,7 +92,8 @@ public class Team
 	
 	public String toString()
 	{
-		return teamName;
+		return teamName+ " " + name1 + " " + name2 + " " + name3 + " " + name4 + 
+		" " + competition1+ " " + competition2 ;
 	}
 		
 }
