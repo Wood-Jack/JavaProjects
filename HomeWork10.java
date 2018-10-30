@@ -49,19 +49,19 @@ public class HomeWork10
 			}
 			else
 			{
-			Scanner inputName = new Scanner(System.in);
+		
 			System.out.println("please enter Player Name:");
-			String playerName= playerInput.nextLine();
+			String playerName= input.nextLine();
 			
 			//get player Score
 			System.out.println(" please enter player score ");
-			int playerScore= playerInput.nextInt();
+			int playerScore= input.nextInt();
 			
 			//assign values to array at correct index position
 			playerNames[countPlayers]= playerName;
 			playerScores[countPlayers]= playerScore;
 			countPlayers +=1;
-		}
+			}
 			
 			
 				
@@ -70,11 +70,39 @@ public class HomeWork10
 		//print all the player scores
 		else if (menuChoice1==2)
 		{
-		for ( int i= 0 ; i < countPlayers; i++)
-		{
+			for ( int i= 0 ; i < countPlayers; i++)
+			{
 					System.out.println("Player" + i+ ":" + playerNames[i] + " has a score of " + playerScores[i]);
+			}
 		}
-	}
-	while  (menuChoice != 5);
-}
+		//find player by name
+		if (menuChoice1==3)
+		{
+			String searchName=input.nextLine();
+			for ( int i =0 ; i< 10; i++ )
+			{
+				if (searchName.equals(playerName[i]))
+				{
+					System.out.println(" Players Score" + playerScore[i]);
+				}
+			}
+		}
+		//remove players name 
 		
+		if (menuChoice1==4)
+		{
+			for ( int i = 0; i< 10; i++)
+			{
+				if (searchName.equals(playerName[i]))
+				{
+				playerName[i]="";
+				System.out.println("Player Name Deleted ");
+				}
+		
+			}
+		}
+	
+	while  (menuChoice != 5);
+		{
+		}
+}
