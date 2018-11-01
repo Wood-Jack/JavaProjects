@@ -10,18 +10,18 @@ public class HomeWork10_1
 		
 		String [] months;
 		months = new String[12];
-		months[0]= "(1)January ";
-		months[1]= "(2)Feburary ";
-		months[2]= "(3)March ";
-		months[3]= "(4)April ";
-		months[4]= "(5)May ";
-		months[5]= "(6)June ";
-		months[6]= "(7)July ";
-		months[7]= "(8)August ";
-		months[8]= "(9)Septmeber ";
-		months[9]="(10)October ";
-		months[10]="(11)November ";
-		months[11]="(12)December ";
+		months[0]= "(1) January ";
+		months[1]= "(2) Feburary ";
+		months[2]= "(3) March ";
+		months[3]= "(4) April ";
+		months[4]= "(5) May  ";
+		months[5]= "(6) June ";
+		months[6]= "(7) July ";
+		months[7]= "(8) August ";
+		months[8]= "(9) Septmeber ";
+		months[9]="(10) October ";
+		months[10]="(11) November ";
+		months[11]="(12) December ";
 		
 		
 		int [] rainFall;
@@ -41,7 +41,7 @@ public class HomeWork10_1
 		
 		
 		int [] inputRainFall;
-		inputRainFall= new int [13];
+		inputRainFall= new int [12];
 		
 		int monthPicker;
 		int numberPicker;
@@ -54,9 +54,9 @@ public class HomeWork10_1
 		
 		do
 		{
-		System.out.println(" Please choose a number for the month");
+		System.out.println(" Please choose a number for the month if greater than 13 program will end");
 		monthPicker = myScanner.nextInt();
-		
+		monthPicker= monthPicker -1;
 	
 		
 		
@@ -67,17 +67,24 @@ public class HomeWork10_1
 					numberPicker = myScanner.nextInt();
 					inputRainFall[i%12]=numberPicker;
 				}
+				
+			
 					
-					
-		//System.out.println("Your month" + months[monthPicker] + '\t' +" Your averager Rainfall" + rainFall[numberPicker]+ " Month Average RainFall" +rainfall);
-		
+		if (monthPicker <= 12)
+			{
+			  System.out.println( "Your month " + months[monthPicker]+ "your month rainfall: "+ inputRainFall[monthPicker]);
+			}
+				for ( int i =0 ; i < months.length; i++)
+				{
+					System.out.println( months[i]+ '\t'+ "Rainfall average of months: " + rainFall[i]);
+				} 
 				
 			
 		}
-		while (monthPicker == 13);
-				System.out.println( "Program exiting");
-				System.exit(13);
+		while (monthPicker <=12);
+			if(month
 			
-		
+		     monthPicker= myScanner.nextInt();
+			
 	}
 }
