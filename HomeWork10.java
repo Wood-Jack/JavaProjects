@@ -37,27 +37,30 @@ public class HomeWork10
 		System.out.println(" (5) Quit");
 		
 		menuChoice1= input.nextInt();
+		input.nextLine();
 		
-		System.out.print("Debug: you choose option;" + menuChoice1);
+		System.out.print("option selected:  " + menuChoice1);
 		
 		// adding a new player name and scor
-		if (menuChoice1 ==1)
+		if (menuChoice1 == 1)
 		{
-			if(countPlayers >= 11)
+			if(countPlayers >= 10)
 			{
 				System.out.println(" Already enterd 10 players");
 			}
 			else
 			{
 		
-			System.out.println("please enter Player Name:");
+			System.out.println("Please enter Player Name:");
 			//String temp = input.nextLine(); 
 			String playerName= input.nextLine();
 			
 			
 			//get player Score
-			System.out.println(" please enter player score ");
+			System.out.println(" Please enter player score ");
 			int playerScore= input.nextInt();
+			input.nextLine();
+			
 			//temp= input.nextLine();
 			
 			//assign values to array at correct index position
@@ -71,11 +74,11 @@ public class HomeWork10
 			
 		}
 		//print all the player scores
-		else if (menuChoice1==2)
+	    if (menuChoice1==2)
 		{
 			for ( int i= 0 ; i < countPlayers; i++)
 			{
-					System.out.println("Player" + i+ ":" + playerNames[i] + " has a score of " + playerScores[i]);
+					System.out.println("Player " + i+ " : " + playerNames[i] + " has a score of " + playerScores[i]);
 			}
 		}
 		//find player by name
@@ -84,9 +87,9 @@ public class HomeWork10
 			String searchName=input.nextLine();
 			for ( int i =0 ; i< 10; i++ )
 			{
-				if (searchName.equals(playerNames[i]))
+				if (searchName.equalsIgnoreCase(playerNames[i]))
 				{
-					System.out.println(" Players Score" + playerScores[i]);
+					System.out.println(" Players Score " + playerScores[i]);
 				}
 			}
 		}
@@ -95,7 +98,7 @@ public class HomeWork10
 		if (menuChoice1==4)
 		{
 			String searchName=input.nextLine();
-			for ( int i = 0; i< 10; i++)
+			for ( int i = 0; i < 10; i++)
 			{
 				if (searchName.equals(playerNames[i]))
 				{

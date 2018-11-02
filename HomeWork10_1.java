@@ -52,39 +52,42 @@ public class HomeWork10_1
 			System.out.println( months[i]);
 		} 
 		
+		
+			
+		
 		do
 		{
 		System.out.println(" Please choose a number for the month if greater than 13 program will end");
 		monthPicker = myScanner.nextInt();
 		monthPicker= monthPicker -1;
-	
 		
+			if (monthPicker >= 12)
+			{
+				System.out.println("Program Ending");
+				System.exit(0);
+			}
 		
 			
-			for( int i = monthPicker; i < monthPicker + 12; i++)
+					for( int i = monthPicker; i < monthPicker + 12; i++)
 				{
 					System.out.println(" Please choose the a number for rainfall of  month" + months[i%12]);
 					numberPicker = myScanner.nextInt();
 					inputRainFall[i%12]=numberPicker;
 				}
 				
-			
 					
-		if (monthPicker <= 12)
-			{
-			  System.out.println( "Your month " + months[monthPicker]+ "your month rainfall: "+ inputRainFall[monthPicker]);
-			}
-				for ( int i =0 ; i < months.length; i++)
+			if (monthPicker <= 12)
 				{
-					System.out.println( months[i]+ '\t'+ "Rainfall average of months: " + rainFall[i]);
-				} 
-				
+				System.out.println( "Your month " + months[monthPicker]+ "your month rainfall: "+ inputRainFall[monthPicker]);
+				}
+					for ( int i =0 ; i < months.length; i++)
+					{
+					System.out.println( months[i]+ '\t'+ "Rainfall average of months: " + rainFall[i]+ " Inputed RainFall: " + inputRainFall[i]);
+					} 
+			
 			
 		}
-		while (monthPicker <=12);
-			if(month
-			
-		     monthPicker= myScanner.nextInt();
+		while (monthPicker <= 12);
 			
 	}
 }
