@@ -10,7 +10,7 @@ public class TicTac
 		
 		
 		// Tic tac table
-		char [][] table = new char [3][3];
+		char [][] table = new char [7][4];
 		char player = 'X';
 		char ch = '1';
 		int row, column;
@@ -28,9 +28,9 @@ public class TicTac
 					 }
 				
 			}
-			for ( int i = 0 ; i < 3; i++)
+			for ( int i = 0 ; i < 7; i++)
 			{
-				for(int j= 0 ; j <  3; j++)
+				for(int j= 0 ; j <  4; j++)
 					{
 		                System.out.print(table[i][j]);
 					 }
