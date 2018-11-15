@@ -2,18 +2,35 @@
 public class Vehicle
 {
 	private String vehicleMaker= "Tom";
-	private int engine = 6;
+	public int engine = 6;
 	
-	protected final void changeName(String newName)
+	
+	public String getVehicleMaker()
 	{
-		this.name= newName;
+		return  this.vehicleMaker;
 	}
 	
-	protected final String getName()
+	public void setVehicleMaker (String inputVehicleMaker)
 	{
-		return this.name;
+		vehicleMaker = inputVehicleMaker;
 	}
 	
-	public void 
+	public int getEngine()
+	{
+		return this.engine;
+	}
+	
+	public void setEngine( int inputEngine)
+	{
+		engine= inputEngine;
+	}
+	
+	public void carDescription()
+	{
+		System.out.println("Vehicle Owner and how many cylinders the engine has" + vehicleMaker + engine);
+	}
+	
+	
+}
 	
 

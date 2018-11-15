@@ -1,8 +1,9 @@
 
 
-public class Truck
+public class Truck extends Vehicle
 {
-	private double load= 250;
-	private int towing =700;
 	
+	public double load= 250.14;
+	public int towing =700;
+}
 	
