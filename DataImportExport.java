@@ -26,8 +26,8 @@ public class DataImportExport
 	//open my data file for reading
 		try 
 		{
-			importProduct.useDelimiter(",|\r|\n");
 			importProduct = new Scanner( new FileInputStream(inputFilePath));
+			importProduct.useDelimiter(",|\r|\n");
 		}
 		catch(FileNotFoundException e)
 		{
@@ -48,7 +48,7 @@ public class DataImportExport
 				System.out.println("debug: Price " + price);
 				System.out.println("debug: Quantity " + quantity);
 				
-				System.out.println(importProduct.nextLine());
+				//System.out.println(importProduct.nextLine()); (debugged cause it to skip over the lines)
 			
 		
 				//to do : (2) create a new product object, setting the values for name, price, and quantity,
@@ -63,39 +63,53 @@ public class DataImportExport
 					importProduct.nextLine();
 				}
 			}
+			importProduct.close();
 			
-				//Exporter creating object
+			// return my Array of Product objects back to the main method
+			return products;
+			
+			
+			
+		}
+		
+		public static void exportProducts (ProductProject product [] , String inputFilePath)
+		{
+			//Exporter creating object
 		PrintWriter exportProducts = null ;
 		
 		try
 		{
-			exportProducts =  new PrintWriter (new FileOutputStream("products.txt"));
-		}
+			exportProducts =  new PrintWriter (new FileOutputStream(inputFilePath));
+			System.out.println(" Please create a product with a name,price, quantity");
+			for( int i=0; i < product.length ; i++)
+			{
+				if (product[i] != null)
+				{
+					exportProducts.println(product[i]);
+				}
+			}
+		}	
 		catch(FileNotFoundException e)
 		{
 			System.out.println("file not found");
 		}
 		
+		exportProducts.close();
 		
-		
-		
-			
-			// return my Array of Product objects back to the main method
-			return products;
-			
-		
-			
-			
-			
-			
 		}
 		
-		public static void main(String[] args)
+	
+		
+		
+		
+		
+		/*public static void main(String[] args)
 		{
 			DataImportExport data = new DataImportExport();
 			data.importProducts("products.txt");
-		}
+		}*/
 		
 		
+				
 		
 }
