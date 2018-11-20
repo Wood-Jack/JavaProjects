@@ -1,15 +1,19 @@
 
 import java.util.Scanner;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
 
-
+//Exporter 
+import java.io.PrintWriter;
 
 
 
 
 public class DataImportExport
 {
+	//method to import ProductProject data from a file and create
+	// an Array of Product objects
 	public ProductProject [] importProducts(String inputFilePath)
 	{
 		ProductProject [] products = new ProductProject[100];
@@ -17,9 +21,9 @@ public class DataImportExport
 	
 		Scanner importProduct = null ;
 	
-	// try to find file
 
-	
+
+	//open my data file for reading
 		try 
 		{
 			importProduct.useDelimiter(",|\r|\n");
@@ -59,8 +63,31 @@ public class DataImportExport
 					importProduct.nextLine();
 				}
 			}
+			
+				//Exporter creating object
+		PrintWriter exportProducts = null ;
+		
+		try
+		{
+			exportProducts =  new PrintWriter (new FileOutputStream("products.txt"));
+		}
+		catch(FileNotFoundException e)
+		{
+			System.out.println("file not found");
+		}
+		
+		
+		
+		
+			
 			// return my Array of Product objects back to the main method
 			return products;
+			
+		
+			
+			
+			
+			
 		}
 		
 		public static void main(String[] args)
@@ -68,4 +95,7 @@ public class DataImportExport
 			DataImportExport data = new DataImportExport();
 			data.importProducts("products.txt");
 		}
+		
+		
+		
 }
