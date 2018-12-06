@@ -44,7 +44,11 @@ public class Materials
 	{
 		this.title = inputTitle;
 	}
-	
+	/*neeed to do checkedOut: boolean
+	 * need to do checkedOutPatron: int
+	 * 
+	 * 
+	 * ******** */
 	
 	
 }
