@@ -1,9 +1,16 @@
 
+
+
+
+
+
 public class PatronCollection
 {
 	private int collectionMaxSize;
 	private Patrons[] patronCollector;
 	public static final int INITIAL_SIZE = 10;
+	
+	
 	
 	//constructor method 
 	public PatronCollection ( int collectionMaxSize, Patrons[] patronCollector )
@@ -39,13 +46,81 @@ public class PatronCollection
 	{
 		this.patronCollector= inputPatronCollector;
 	}
-	/*need to do displayPatron(),findPatron(),addPatron(),removePatron().
+	
+	// display all patrons
+	
+	public static void displayPatrons(Patrons[] patronCollector)
+	{
+		for( int i = 0 ; i < patronCollector.length; i++)
+		{
+			if ( patronCollector[i] != null)
+			{
+				System.out.println( "  " + patronCollector[i]);
+			}
+		}
+	}
+	
+	// find patron
+	public static void findPatrons(Patrons[] patronCollector, String inputName)
+	{
+		for( int i = 0 ; i < patronCollector.length; i++)
+		{
+			if ( patronCollector[i] != null)
+			{
+				if ( patronCollector[i].getName().equalsIgnoreCase(inputName))
+				{
+					System.out.println( "   " + patronCollector[i]);
+				}
+			}
+		}
+	}
+	
+	// add patron 
+	
+	public static void addPatrons( Patrons[] patronCollector, String inputName)
+	{
+		for ( int i = 0 ; i< patronCollector.length; i++)
+		{
+			if (patronCollector[i] != null)
+			{
+				if (patronCollector[i].getName().equalsIgnoreCase(inputName))
+				{
+					patronCollector[i]= inputName;
+					System.out.println("Patron has been added");
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	// removed patron
+	public static void addPatrons( Patrons[] patronCollector, String inputName)
+	{
+		for ( int i = 0 ; i< patronCollector.length; i++)
+		{
+			if (patronCollector[i] != null)
+			{
+				if (patronCollector[i].getName().equalsIgnoreCase(inputName))
+				{
+					patronCollector[i]="";
+					System.out.println("Patron has been deleted");
+				}
+			}
+		}
+	}
+	
+	
+	
+	/*need to do ),findPatron(),addPatron(),removePatron().
 	 * 
 	 * 
 	 * 
 	 * **************** */
 	 
-	 System.out.println(  Arrays.toString(PatronCollection));
+	
 	
 }
 	

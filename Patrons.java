@@ -2,11 +2,15 @@
 public class Patrons
 {
 	private static int patronID;
+	// create a private name for the patron collection system
+	private static String name
+	
 	
 	//Constructor Method 
-	public Patrons( int patronID)
+	public Patrons( int patronID, String name)
 	{
 		this.patronID= patronID;
+		this.name= name;
 	}
 	
 	
@@ -21,6 +25,36 @@ public class Patrons
 	{
 		this.patronID = inputPatronID;
 	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public void setName( String inputName)
+	{
+		this.name= inputName;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void getPatronIDs ( Patrons[] patronCollector)
+	{
+		for (int i = 0; i < patronCollector.length; i++)
+		{
+			System.out.println("" + patronCollector[i]);
+		}
+		
+	}
+	
+	
+	
 	
 }
 	
