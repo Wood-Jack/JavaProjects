@@ -1,9 +1,9 @@
 
 public class Patrons
 {
-	private static int patronID;
+	private  int patronID;
 	// create a private name for the patron collection system
-	private static String name
+	private  String name;
 	
 	
 	//Constructor Method 
@@ -52,7 +52,7 @@ public class Patrons
 		}
 		
 	}
-	
+	/* Patrons completed */
 	
 	
 	

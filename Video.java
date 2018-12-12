@@ -5,10 +5,10 @@ public class Video extends Materials
 	//private String title;
 	
 	//Constructor method
-	 public  Video (String title, int id, String director)
+	 public  Video (String title, int id, String director, int checkedOutPatron)
 	 {
 		 //super();
-		 super(title, id);
+		 super(title, id, checkedOutPatron);
 		 this.director = director;
 	 }
 	 
@@ -28,4 +28,5 @@ public class Video extends Materials
 	 {
 		 this.director= inputDirector;
 	 }
+	 /* Video Competed */
  }

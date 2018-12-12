@@ -77,17 +77,18 @@ public class PatronCollection
 	
 	// add patron 
 	
-	public static void addPatrons( Patrons[] patronCollector, String inputName)
+	public static void addPatrons( Patrons[] patronCollector, String inputName, int inputID)
 	{
 		for ( int i = 0 ; i< patronCollector.length; i++)
 		{
 			if (patronCollector[i] != null)
 			{
-				if (patronCollector[i].getName().equalsIgnoreCase(inputName))
-				{
-					patronCollector[i]= inputName;
-					System.out.println("Patron has been added");
-				}
+
+                Patrons newPatron = new Patrons( inputID, inputName);
+                
+				patronCollector[i]=  newPatron;
+				System.out.println("Patron has been added");
+				
 			}
 		}
 	}
@@ -97,7 +98,7 @@ public class PatronCollection
 	
 	
 	// removed patron
-	public static void addPatrons( Patrons[] patronCollector, String inputName)
+	public static void removePatrons( Patrons[] patronCollector, String inputName)
 	{
 		for ( int i = 0 ; i< patronCollector.length; i++)
 		{
@@ -105,21 +106,14 @@ public class PatronCollection
 			{
 				if (patronCollector[i].getName().equalsIgnoreCase(inputName))
 				{
-					patronCollector[i]="";
+					patronCollector[i]=null;
 					System.out.println("Patron has been deleted");
 				}
 			}
 		}
 	}
-	
-	
-	
-	/*need to do ),findPatron(),addPatron(),removePatron().
-	 * 
-	 * 
-	 * 
-	 * **************** */
 	 
+	 /* PatronCollection Completed */
 	
 	
 }
