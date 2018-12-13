@@ -9,13 +9,16 @@ public class Materials
 	private String title;
 	private int id;
 	private int checkedOutPatron;
+	private boolean checkedOut;
+	
 	
 	//Constructor Method
-	public Materials(String title, int id , int checkedOutPatron)
+	public Materials(String title, int id , int checkedOutPatron, boolean checkedOut)
 	{
 		this.id = materialID;
 		this.title= title;
 		this.checkedOutPatron= checkedOutPatron;
+		this.checkedOut = checkedOut;
 	
 	}
 	
@@ -26,6 +29,7 @@ public class Materials
 		this.id= materialID;
 		this.title= "title";
 		this.checkedOutPatron= 0;
+		this.checkedOut= false;
 		materialID++;
 	}
 	
@@ -47,26 +51,25 @@ public class Materials
 	{
 		this.title = inputTitle;
 	}
-	public int getCheckedOut()
+	public int getCheckedOutPatron()
 	{
 		return checkedOutPatron;
 	}
-	public void setCheckedOut( int inputCheckedOutPatron)
+	public void setCheckedOutPatron( int inputCheckedOutPatron)
 	{
 		this.checkedOutPatron = inputCheckedOutPatron;
+	}
+	public boolean getCheckedOut()
+	{
+		return checkedOut;
+	}
+	public void setCheckedOut( boolean inputCheckedOut)
+	{
+		this.checkedOut= inputCheckedOut;
 	}
 	
 	
 	
-	
-	
-	
-	
-	/*need to do checkedOut: boolean
-	 * need to do checkedOutPatron: int
-	 * 
-	 * 
-	 * ******** */
 	
 	
 }

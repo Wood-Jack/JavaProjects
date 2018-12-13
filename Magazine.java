@@ -3,10 +3,10 @@ public class Magazine extends Materials
 	private String issueNbr;
 	
 	//constructor method
-	public Magazine ( String title, int id , String issueNbr, int checkedOutPatron)
+	public Magazine ( String title, int id , String issueNbr, int checkedOutPatron, boolean checkedOut)
 	{
 		
-		super(title, id, checkedOutPatron);
+		super(title, id, checkedOutPatron, checkedOut);
 		this.issueNbr=issueNbr;
 		
 	}

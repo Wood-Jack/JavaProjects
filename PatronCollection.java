@@ -77,14 +77,14 @@ public class PatronCollection
 	
 	// add patron 
 	
-	public static void addPatrons( Patrons[] patronCollector, String inputName, int inputID)
+	public static void addPatrons( Patrons[] patronCollector, String inputName, int inputPatronID)
 	{
 		for ( int i = 0 ; i< patronCollector.length; i++)
 		{
 			if (patronCollector[i] != null)
 			{
 
-                Patrons newPatron = new Patrons( inputID, inputName);
+                Patrons newPatron = new Patrons( inputPatronID, inputName);
                 
 				patronCollector[i]=  newPatron;
 				System.out.println("Patron has been added");

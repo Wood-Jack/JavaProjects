@@ -4,9 +4,9 @@ public class Book extends Materials
 	private String ISBN;
 	
 	//Constructor Method
-	public Book ( String title, int id, String author, String ISBN, int checkedOutPatron)
+	public Book ( String title, int id, String author, String ISBN, int checkedOutPatron, boolean checkedOut)
 	{
-		super(title,id, checkedOutPatron);
+		super(title,id, checkedOutPatron, checkedOut);
 		this.author= author;
 		this.ISBN= ISBN;
 	}
