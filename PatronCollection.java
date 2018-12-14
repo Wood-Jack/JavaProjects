@@ -38,7 +38,7 @@ public class PatronCollection
 		this.collectionMaxSize= inputCollectionMaxSize;
 	}
 	
-	public Patrons[] getPatronCollector()
+	public Patrons [] getPatronCollector()
 	{
 		return patronCollector;
 	}

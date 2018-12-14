@@ -4,7 +4,7 @@
  * 
  * 
  * ********************** */
-public class LibraryCollection
+public class LibraryCollection 
 {
 	private int collectionMaxSize;
 	private Materials [] libraryCollector;
@@ -109,13 +109,13 @@ public class LibraryCollection
 	}
 	
 	//remove book 
-	public static void removeBook( Materials[] libraryCollector, String inputAuthor, String inputISBN)
+	public static void removeBook( Materials[] libraryCollector, String inputTitle, String inputISBN)
 	{
 		for ( int i = 0 ; i< libraryCollector.length; i++)
 		{
 			if (libraryCollector[i] != null)
 			{
-				if ((libraryCollector[i].getAuthor().equalsIgnoreCase(inputAuthor)) && libraryCollector[i].getISBN == ISBN)
+				if ((libraryCollector[i].getAuthor().equalsIgnoreCase("Author")) && libraryCollector[i].getISBN() == "ISBN")
 				{
 					libraryCollector[i]=null;
 					System.out.println("Book has been deleted");
@@ -124,14 +124,79 @@ public class LibraryCollection
 		}
 	}
 	
+	// add  video
 	
 	
+	public static void addVideos( Materials[] libraryCollector,String title, int id, String director, int checkedOutPatron, boolean checkedOut)
+	{
+		for ( int i = 0 ; i< libraryCollector.length; i++)
+		{
+			if (libraryCollector[i] != null)
+			{
+				// fix checked out and checked out patron if must 
+                Materials newVideo = new Video (title, id, director,  checkedOutPatron, checkedOut);
+                
+				libraryCollector[i]=  newVideo;
+				System.out.println("Video has been Added");
+				
+			}
+		}
+	}
+	
+	//remove video
+
+	public static void removeVideo( Materials[] libraryCollector, String inputDirector)
+	{
+		for ( int i = 0 ; i< libraryCollector.length; i++)
+		{
+			if (libraryCollector[i] != null)
+			{
+				if ((libraryCollector[i].getDirector().equalsIgnoreCase("Director")))
+				{
+					libraryCollector[i]=null;
+					System.out.println("Video has been deleted");
+				}
+			}
+		}
+	}
+	//add magazine
+	
+	public static void addMagazine( Materials[] libraryCollector, String title, int id , String issueNbr,
+	 int checkedOutPatron, boolean checkedOut )
+	{
+		for ( int i = 0 ; i< libraryCollector.length; i++)
+		{
+			if (libraryCollector[i] != null)
+			{
+				// fix checked out and checked out patron if must 
+                Materials newMagazine = new Magazine (title,id ,issueNbr,checkedOutPatron, checkedOut);
+                
+				libraryCollector[i]=  newMagazine;
+				System.out.println("Magazine has been Added");
+				
+			}
+		}
+	}
+	
+	// remove magazine 
 	
 	
+	public static void removeMagazine( Materials[] libraryCollector, String inputIssueNbr)
+	{
+		for ( int i = 0 ; i< libraryCollector.length; i++)
+		{
+			if (libraryCollector[i] != null)
+			{
+				if ((libraryCollector[i].getIssueNbr().equalsIgnoreCase("Issue number")))
+				{
+					libraryCollector[i]=null;
+					System.out.println("Magazine has been deleted");
+				}
+			}
+		}
+	}
 	
-	
-	
-	
+
 }
 		
 		

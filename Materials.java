@@ -68,11 +68,44 @@ public class Materials
 		this.checkedOut= inputCheckedOut;
 	}
 	
+
 	
-	
-	
+	// getters and setters for book, magazine and video
+	public String getAuthor()
+	{
+		return "Author" ;
+	}
+
+	public String getISBN()
+	{
+		return "ISBN";
+	}
+	public String getDirector()
+	{
+		return"Director";
+	}
+	public String getIssueNbr()
+	{ 
+		return "Issue Number";
+	}
 	
 }
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
 	
 
             
