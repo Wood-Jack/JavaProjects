@@ -5,7 +5,7 @@
 * ******************************* */
 import java.util.Scanner;
 
-public class Week2GroupProject
+public class VendingMachine
 
 { 
 	public static void main (String [] args)
