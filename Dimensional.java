@@ -1,11 +1,9 @@
 /*
- * 
- * 
- * 
- * Inside class work
+*Two Dimensional Arrays
+* By: Woodrow Jackson
  * ***************** */
  
- public class Week11
+ public class Dimensional
  {
 	 public static void main (String [] args)
 	 {
