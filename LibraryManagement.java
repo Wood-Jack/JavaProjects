@@ -30,7 +30,7 @@ public class LibraryManagement
 		int menu[] = new int[4];
 		LibraryCollection sampleArray[] = new LibraryCollection[10];
 		// patrons array
-		sampleArray[1] = new LibraryCollection ( "Patron", 101,"Mark Stramaglia");
+		sampleArray[1] = new LibraryCollection ( "Patron", 101,"Mark Jackson");
 		
 		
 		
