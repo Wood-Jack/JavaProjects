@@ -12,12 +12,8 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 /*
- * This is Driver 
- * 
- * 
- * 
- * 
- * 
+ * LibraryManagment 
+ *
  * 
  * ********************/
 
@@ -35,10 +31,6 @@ public class LibraryManagement
 		LibraryCollection sampleArray[] = new LibraryCollection[10];
 		// patrons array
 		sampleArray[1] = new LibraryCollection ( "Patron", 101,"Mark Stramaglia");
-		
-		
-		
-		
 		
 		
 		
