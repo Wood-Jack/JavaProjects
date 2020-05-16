@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class HomeWork10
+public class PlayerStatDriver
 {
 	public static void main (String [] args)
 	{
