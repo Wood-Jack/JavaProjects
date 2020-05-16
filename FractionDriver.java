@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 
-public class FractionTester
+public class FractionDriver
 {
 	public static void main (String args [])
 	{
