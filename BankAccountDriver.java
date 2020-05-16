@@ -1,3 +1,9 @@
+/*
+*Program: BankAccountDriver
+*Description: Creates a bank account using the BankAccount object which has been created in another
+* class. Allows this main driver to create a new account balance and seeing the current balance of the account. 
+*/
+
 
 public class BankAccountDriver
 {
