@@ -1,1 +1,1 @@
-This project is a library system in which it holds various materials that would be found inside a library which would include Books magazines, and videos in which a person can add to the library system or checkout.
+Hello There welcome to my Java Projects Folder inside this folder are code samples. This code samples are samples of all previous work I have completed or I am still  currently working on.
