@@ -1,7 +1,6 @@
 /* *****************************
 * Name: Woodrow Jackson
-* Date: 8/30/18
-* GroupProject2 Vending Machine
+* Project Vending Machine
 * ******************************* */
 import java.util.Scanner;
 
