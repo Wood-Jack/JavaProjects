@@ -1,6 +1,13 @@
 
 
 import java.util.Scanner;
+/*
+*Program: Airplane.java
+*Description: A program that asks passengers what seats they want in a plane
+*if seat is taken X will appear
+*/
+
+
 
 public class AirPlane
 {
