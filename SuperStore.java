@@ -1,5 +1,5 @@
 
-public class SuperStore3
+public class SuperStore
 {
 	public static void main ( String [] args)
 	{
