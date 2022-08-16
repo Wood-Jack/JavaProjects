@@ -1,5 +1,5 @@
 
-public class Product3
+public class Product
 {
 	// Instance Variables
 	private String name;
