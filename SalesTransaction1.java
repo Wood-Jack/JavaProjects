@@ -1,8 +1,8 @@
 
-public class SalesTransaction1
+public class SalesTransaction
 {
 	//Instance variables
-	private Product3 productSold ;
+	private Product productSold ;
 	
 	private int quantitySold;
 	// transactionAmount= proudctsold.getPrice() * quantitysold
@@ -11,7 +11,7 @@ public class SalesTransaction1
 	private static  double transactionsTotalAmount;
 	
 	//Constructor method
-	public SalesTransaction1( Product3 productSold, int quantitySold)
+	public SalesTransaction( Product productSold, int quantitySold)
 	{
 		this.productSold=productSold;
 		this.quantitySold=quantitySold;
